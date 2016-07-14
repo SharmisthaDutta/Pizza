@@ -1,0 +1,27 @@
+<resources>
+    <!-- strings for Main Activity-->
+    <string name="app_name">Welcome to Ajax Pizza</string>
+    <string name="pizza_drink_text">Pizza and Drink Menu</string>
+    <string name="help_text">Help</string>
+    <string name="desc">Image of a Pizza</string>
+    <!-- strings for Pizza and Drink activity-->
+    <!--<string name="pizza__text">Pizza Menu</string>-->
+    <!--<string name="pizza_size_text">Choose your pizza size</string>-->
+    <!--<string name="pizza_size_small">Small $5</string>-->
+    <!--<string name="pizza_size_medium">Medium $10</string>-->
+    <!--<string name="pizza_size_large">Large $15</string>-->
+
+    <!--<string name="drink_text">Help</string>-->
+    <!--<string name="drink_size_text">Choose your drink</string>-->
+    <!--<string name="drink_size_small">Help</string>-->
+    <!--<string name="drink_size_medium">Image of a Pizza</string>-->
+    <!--<string name="drink_size_large">Image of a Pizza</string>-->
+
+
+    <string name="review_update_order">Review your order</string>
+
+
+    <string name="confirmation_message">Confirmation of your Order</string>
+
+
+</resources>

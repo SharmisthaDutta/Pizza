@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sharmistha.pizza.PlacedOrderDialogActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="25dp"
+            android:text="Your order has been confirmed and order number is XXXX. Click on the button below to start another order. Click on YYYY to exit the application."
+            android:id="@+id/textView3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza and Drink Menu"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#FFFFFF"
+            android:id="@+id/go_back_pizza_menu_button"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>
