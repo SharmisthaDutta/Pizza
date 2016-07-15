@@ -1,30 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.sharmistha.pizza.PizzaAndDrinkMenuActivity">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <TextView
+        <!--Put form controls here-->
+        <!--<TextView-->
+            <!--android:id="@+id/TextViewTitle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/pizza_drink_text"-->
+            <!--android:textSize="10pt">-->
+        <!--</TextView>-->
+        <Spinner
+            android:id="@+id/SpinnerPizzaType"
+            android:layout_height="wrap_content"
+            android:prompt="@string/pizza_prompt"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:text="New Text"
-            android:id="@+id/textView"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:layout_columnSpan="60" />
-    </GridLayout>
+            android:entries="@array/pizzatypelist">
+        </Spinner>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/tomatoResponse"
+                                android:layout_height="wrap_content"
+                                android:text="tomato ($0)"
+                                android:textSize="15dp"
+                                android:layout_width="wrap_content">
+                            </CheckBox>
+                            <CheckBox
+                                android:id="@+id/cheeseResponse"
+                                android:layout_height="wrap_content"
+                                android:text="cheese ($0)"
+                                android:textSize="15dp"
+                                android:layout_width="wrap_content">
+                            </CheckBox>
+                            <CheckBox
+                                android:id="@+id/pepperResponse"
+                                android:layout_height="wrap_content"
+                                android:text="peppers ($0)"
+                                android:textSize="15dp"
+                                android:layout_width="wrap_content">
+                            </CheckBox>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/onionResponse"
+                                android:layout_height="wrap_content"
+                                android:text="onions ($0)"
+                                android:textSize="15dp"
+                                android:layout_width="wrap_content">
+                            </CheckBox>
+                            <CheckBox
+                                android:id="@+id/sausageResponse"
+                                android:layout_height="wrap_content"
+                                android:text="sausage ($1)"
+                                android:textSize="15dp"
+                                android:layout_width="wrap_content">
+                            </CheckBox>
+                            <CheckBox
+                                android:id="@+id/hamResponse"
+                                android:layout_height="wrap_content"
+                                android:text="ham ($1)"
+                                android:textSize="15dp"
+                                android:layout_width="wrap_content">
+                            </CheckBox>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/chickenResponse"
+                                android:layout_height="wrap_content"
+                                android:text="chicken ($1)"
+                                android:textSize="15dp"
+                                android:layout_width="wrap_content">
+                            </CheckBox>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/PizzaQuantityTextView"
+                                android:layout_width="200dp"
+                                android:paddingLeft="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="How many Pizzas of this selction do you want"
+                                >
+                            </TextView>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:id="@+id/QuantityResponse"
+                                android:layout_height="wrap_content"
+                                android:hint="E.g  1"
+                                android:inputType="number"
+                                android:layout_width="155dp">
+                            </EditText>
+
+
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/SpinnerDrinkType"
+            android:layout_height="wrap_content"
+            android:prompt="@string/drink_prompt"
+            android:layout_width="wrap_content"
+            android:entries="@array/drinkcontentlist">
+        </Spinner>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/drinksizesmallResponse"
+                android:layout_height="wrap_content"
+                android:text="small ($2)"
+                android:textSize="15dp"
+                android:layout_width="wrap_content">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/drinksizemediumResponse"
+                android:layout_height="wrap_content"
+                android:text="medium ($3)"
+                android:textSize="15dp"
+                android:layout_width="wrap_content">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/drinksizelargeResponse"
+                android:layout_height="wrap_content"
+                android:text="large ($5)"
+                android:textSize="15dp"
+                android:layout_width="wrap_content">
+            </CheckBox>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/DrinkQuantityTextView"
+                android:layout_width="200dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="How many Drinks of this selction do you want"
+                >
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/DrinkQuantityResponse"
+                android:layout_height="wrap_content"
+                android:hint="E.g  1"
+                android:inputType="number"
+                android:layout_width="155dp">
+            </EditText>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:paddingTop="50dp"
+            android:layout_height="fill_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Add Another"
+                android:textAllCaps="false"
+                android:id="@+id/pizza_drink_menu_button"
+
+                android:textColor="#fffefe"
+                android:background="#309f3b"
+                android:layout_gravity="center_horizontal"
+                 />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Confirm Order"
+                android:textAllCaps="false"
+                android:id="@+id/confirm_order_button"
+
+                android:textColor="#fffefe"
+                android:background="#309f3b"
+                />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

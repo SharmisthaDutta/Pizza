@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pizzatypelist">
+        <item>@string/pizza_size_small</item>
+        <item>@string/pizza_size_medium</item>
+        <item>@string/pizza_size_large</item>
+
+    </string-array>
+    <string-array name="drinkcontentlist">
+        <item>@string/drink_type_coke</item>
+        <item>@string/drink_type_seven_up</item>
+        <item>@string/drink_type_orange_cola</item>
+        <item>@string/drink_type_cherry_cola</item>
+
+    </string-array>
+</resources>
