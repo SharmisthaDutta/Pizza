@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PizzaAndDrinkMenuActivity extends AppCompatActivity {
+public class PizzaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pizza_and_drink_menu);
+        setContentView(R.layout.activity_pizza);
         Button confirm_order_button = (Button) findViewById(R.id.confirm_order_button);
         Button pizza_drink_menu_button = (Button) findViewById(R.id.pizza_drink_menu_button);
 
@@ -26,7 +26,7 @@ public class PizzaAndDrinkMenuActivity extends AppCompatActivity {
         // erased and previous entered data should be stored in db
         pizza_drink_menu_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent =new Intent(getApplicationContext(),PizzaAndDrinkMenuActivity.class);
+                Intent intent =new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
             }
         });

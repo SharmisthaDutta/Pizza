@@ -16,16 +16,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PizzaAndDrinkMenuActivity"
-            android:label="@string/pizza_drink_text" />
+            android:name=".PizzaActivity"
+            android:label="@string/pizza_text" />
         <activity
             android:name=".HelpActivity"
             android:label="@string/help_text" />
-        <activity
-            android:name=".ReviewUpdateOrderActivity"
-            android:label="@string/review_update_order" />
-        <activity android:name=".PlacedOrderDialogActivity"
-            android:label="@string/confirmation_message"/>
+         <activity
+         android:name=".ReviewUpdateOrderActivity"
+         android:label="@string/review_update_order" />
+         <activity android:name=".PlacedOrderDialogActivity"
+         android:label="@string/confirmation_message"/>
+        <activity android:name=".DrinkActivity"
+            android:label="@string/drink_text"></activity>
     </application>
 
 </manifest>

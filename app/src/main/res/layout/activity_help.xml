@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:text="Welcome to the Ajax Pizza meal ordering system. Please click on back button to go back and visit the Pizzas and drink menu button to see a list of available pizza and drinks that you can order"
+        android:text="@string/help_dialog"
         android:id="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

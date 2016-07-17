@@ -1,9 +1,12 @@
 <resources>
     <!-- strings for Main Activity-->
     <string name="app_name">Welcome to Ajax Pizza</string>
-    <string name="pizza_drink_text">Pizza and Drink Menu</string>
+    <string name="pizza_text">Pizza Menu</string>
+    <string name="drink_text">Drink Menu</string>
     <string name="help_text">Help</string>
     <string name="desc">Image of a Pizza</string>
+
+    <string name="help_dialog">Welcome to the Ajax Pizza meal ordering system. Please click on back button to go back and visit the Pizzas and Drink Buttons to see a list of available pizza and drinks that you can order</string>
     <!-- strings for Pizza and Drink activity-->
 
     <string name="pizza_prompt">Choose your pizza size</string>
@@ -16,7 +19,6 @@
     <string name="drink_type_seven_up">7-Up</string>
     <string name="drink_type_orange_cola">Orange Cola</string>
     <string name="drink_type_cherry_cola">Cherry Cola</string>
-
 
 
     <string name="review_update_order">Review your order</string>

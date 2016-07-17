@@ -10,44 +10,47 @@
     android:orientation="vertical"
     tools:context="com.example.sharmistha.pizza.MainActivity"
     >
-
-    <ImageView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/Pizzabutton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-
-        android:src="@drawable/pizza"
-        android:background="@color/abc_input_method_navigation_guard"
-        android:contentDescription="@string/desc" />
-    <RelativeLayout
+        android:background="@null"
+        android:text="Click here to view our pizza selection"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/pizza"
+        />
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-            <Button
-                android:layout_width="235dp"
-                android:layout_height="wrap_content"
-                android:text="@string/pizza_drink_text"
-                android:textAllCaps="false"
-                android:id="@+id/pizza_drink_menu_button"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:id="@+id/Drinkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Click here to view our drink selection"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/soda"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_text"
+        android:textAllCaps="false"
+        android:id="@+id/help_button"
 
-                android:textColor="#fffefe"
-                android:background="#309f3b"
-                android:layout_gravity="center_horizontal"
-                android:layout_alignTop="@+id/help_button"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+        android:textColor="@color/colorofButtonText"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/help_text"
-                android:textAllCaps="false"
-                android:id="@+id/help_button"
 
-                android:textColor="#fffefe"
-                android:background="#309f3b"
-                android:layout_gravity="center_horizontal"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-    </RelativeLayout>
 </LinearLayout>

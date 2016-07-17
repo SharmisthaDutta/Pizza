@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.sharmistha.pizza.PizzaActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="@string/pizza_prompt"
+        android:id="@+id/textViewpizza" />
+
+
+
+    <Spinner
+        android:id="@+id/SpinnerPizzaType"
+        android:layout_height="wrap_content"
+
+        android:prompt="@string/pizza_prompt"
+        android:layout_width="wrap_content"
+        android:entries="@array/pizzatypelist"
+        android:layout_below="@+id/textViewpizza"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </Spinner>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/firstgroup"
+                android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SpinnerPizzaType"
+            android:layout_centerHorizontal="true">
+                            <Button
+                                android:id="@+id/tomatoResponse"
+                                android:layout_height="wrap_content"
+                                android:text="tomato (+$0)"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorofButtonText"
+                                android:background="@drawable/button_background"
+                                android:textAllCaps="false"
+
+                                android:layout_width="150dp">
+                            </Button>
+                            <Button
+                                android:id="@+id/cheeseResponse"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="cheese (+$0)"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorofButtonText"
+                                android:background="@drawable/button_background"
+                                android:textAllCaps="false"
+
+                                android:layout_width="150dp">
+                            </Button>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/secondgroup"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstgroup"
+            android:layout_alignLeft="@+id/firstgroup"
+            android:layout_alignStart="@+id/firstgroup">
+                            <Button
+                                android:id="@+id/pepperResponse"
+                                android:layout_height="wrap_content"
+                                android:text="peppers ($0)"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorofButtonText"
+                                android:background="@drawable/button_background"
+                                android:textAllCaps="false"
+
+                                android:layout_width="150dp">
+                            </Button>
+                            <Button
+                                android:id="@+id/onionResponse"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="onions (+$0)"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorofButtonText"
+                                android:background="@drawable/button_background"
+                                android:textAllCaps="false"
+
+                                android:layout_width="150dp">
+                            </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thirdgroup"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondgroup"
+        android:layout_alignLeft="@+id/secondgroup"
+        android:layout_alignStart="@+id/secondgroup">
+                            <Button
+                                android:id="@+id/chickenResponse"
+                                android:layout_height="wrap_content"
+                                android:text="chicken (+$1)"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorofButtonText"
+                                android:background="@drawable/button_background"
+                                android:textAllCaps="false"
+
+                                android:layout_width="150dp"
+                                >
+                            </Button>
+                            <Button
+                            android:id="@+id/sausageResponse"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="sausage (+$1)"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorofButtonText"
+                            android:background="@drawable/button_background"
+                            android:textAllCaps="false"
+                            android:layout_width="150dp"
+                            >
+
+                            </Button>
+
+
+        </LinearLayout>
+                        <Button
+                        android:id="@+id/hamResponse"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="ham (+$1)"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorofButtonText"
+                        android:background="@drawable/button_background"
+                        android:textAllCaps="false"
+
+                        android:layout_width="150dp"
+                            android:layout_below="@+id/thirdgroup"
+                            android:layout_centerHorizontal="true">
+                        </Button>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/PizzaQuantityTextView"
+        android:layout_width="200dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="How many Pizzas of this selction do you want?"
+        android:layout_below="@+id/hamResponse"
+        >
+    </TextView>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_alignTop="@+id/PizzaQuantityTextView"
+        android:layout_toRightOf="@+id/PizzaQuantityTextView"
+        android:layout_toEndOf="@+id/PizzaQuantityTextView"
+        android:layout_alignBottom="@+id/PizzaQuantityTextView" />
+    <LinearLayout
+        android:id="@+id/fourthgroup"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PizzaQuantityTextView"
+        android:layout_centerHorizontal="true">
+                <Button
+                    android:id="@+id/pizza_drink_menu_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Add Another"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/colorofButtonText"
+                    android:background="@drawable/button_background"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/thirdgroup"
+                    android:layout_alignStart="@+id/thirdgroup" />
+
+
+
+                <Button
+                    android:id="@+id/confirm_order_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Confirm Order"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorofButtonText"
+                    android:background="@drawable/button_background"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/thirdgroup"
+                    android:layout_alignEnd="@+id/thirdgroup" />
+    </LinearLayout>
+
+</RelativeLayout>
